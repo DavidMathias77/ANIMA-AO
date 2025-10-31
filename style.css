@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    margin: 0;
+    background-color: aliceblue;
+}
+.bola{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    border-radius: 50%;
+    position: relative;
+    animation: pular 1s infinite alternate ease-in-out;
+    border: black 3px solid;
+}
+
+@keyframes pular {
+    0%{bottom: 0;}
+    50%{bottom: 150px; transform: scale(1.1,0.9);}
+    100%{bottom: 0; transform: scale(1,1);}
+}
